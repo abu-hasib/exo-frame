@@ -1,0 +1,36 @@
+@mixin debug {
+  border: 1px solid red !important;
+
+  & > * {
+    border: 1px solid blue !important;
+  }
+}
+
+// MIXIN to use flexbox quickly
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.debug {
+  border: 1px solid red !important;
+  & > * {
+    border: 1px solid blue !important;
+  }
+}
